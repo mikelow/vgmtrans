@@ -12,7 +12,7 @@
 #include <QObject>
 #include <VGMColl.h>
 #include <VGMExport.h>
-#include "SequencePlayer.h"
+#include "NewSequencePlayer.h"
 #include "QtVGMRoot.h"
 
 static const QIcon &VGMCollIcon() {
@@ -194,9 +194,9 @@ void VGMCollListView::handlePlaybackRequest() {
   }
 
   VGMColl *coll = qtVGMRoot.vVGMColl[list[0].row()];
-  SequencePlayer::the().playCollection(coll);
+  NewSequencePlayer::the().playCollection(coll);
 }
 
 void VGMCollListView::handleStopRequest() {
-  SequencePlayer::the().stop();
+  NewSequencePlayer::the().stop();
 }
