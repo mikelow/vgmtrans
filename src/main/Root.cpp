@@ -94,7 +94,7 @@ void VGMRoot::AddScanner(const string &formatname) {
 
 void VGMRoot::Exit(void) {
   UI_PreExit();
-  Reset();
+//  Reset();
   UI_Exit();
 }
 
