@@ -10,6 +10,7 @@
 #include "QtVGMRoot.h"
 #include "VGMFileTreeView.h"
 #include "util/UIHelpers.h"
+#include "SequencePlayer.h"
 
 QtVGMRoot qtVGMRoot;
 
@@ -33,6 +34,7 @@ void QtVGMRoot::UI_PreExit() {
 }
 
 void QtVGMRoot::UI_Exit() {
+  SequencePlayer::deleteInstance();
 }
 
 void QtVGMRoot::UI_AddRawFile(RawFile*) {
