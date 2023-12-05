@@ -5,7 +5,7 @@
 add_subdirectory("${PROJECT_SOURCE_DIR}/lib/gsl-lite"
                  "${CMAKE_CURRENT_BINARY_DIR}/gsl-lite" EXCLUDE_FROM_ALL)
 
-add_subdirectory("${PROJECT_SOURCE_DIR}/external/JUCE"
+add_subdirectory("${PROJECT_SOURCE_DIR}/external/juicysfplugin/external/JUCE"
         "${CMAKE_CURRENT_BINARY_DIR}/JUCE" EXCLUDE_FROM_ALL)
 
 
