@@ -106,7 +106,7 @@ bool    WdsInstrSet::GetInstrPointers() {
 //		Constructor
 //--------------------------------------------------------------
 WdsInstr::WdsInstr(VGMInstrSet *instrSet, uint32_t offset, uint32_t length, uint32_t theBank, uint32_t theInstrNum) :
-    VGMInstr(instrSet, offset, length, theBank, theInstrNum, L"Instrument", defaultFFTReverbPercent) {
+    VGMInstr(instrSet, offset, length, theBank, theInstrNum, "Instrument", defaultFFTReverbPercent) {
 }
 
 //==============================================================
