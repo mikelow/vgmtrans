@@ -12,7 +12,7 @@
 #include "VGMSeq.h"
 #include "VGMInstrSet.h"
 #include "VGMSampColl.h"
-#include "CPS1Instr.h"
+#include "formats/CPS/CPS1Instr.h"
 
 namespace fs = ghc::filesystem;
 
